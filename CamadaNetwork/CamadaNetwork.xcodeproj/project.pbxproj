@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54155D272B1AC9A10080CD63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D262B1AC9A10080CD63 /* AppDelegate.swift */; };
+		54155D292B1AC9A10080CD63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D282B1AC9A10080CD63 /* SceneDelegate.swift */; };
+		54155D2B2B1AC9A10080CD63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D2A2B1AC9A10080CD63 /* ViewController.swift */; };
+		54155D2E2B1AC9A10080CD63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54155D2C2B1AC9A10080CD63 /* Main.storyboard */; };
+		54155D302B1AC9A40080CD63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54155D2F2B1AC9A40080CD63 /* Assets.xcassets */; };
+		54155D332B1AC9A40080CD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54155D312B1AC9A40080CD63 /* LaunchScreen.storyboard */; };
+		54155D3E2B1AC9A40080CD63 /* CamadaNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D3D2B1AC9A40080CD63 /* CamadaNetworkTests.swift */; };
+		54155D482B1AC9A40080CD63 /* CamadaNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D472B1AC9A40080CD63 /* CamadaNetworkUITests.swift */; };
+		54155D4A2B1AC9A40080CD63 /* CamadaNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D492B1AC9A40080CD63 /* CamadaNetworkUITestsLaunchTests.swift */; };
+		54155D582B1ACA030080CD63 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D572B1ACA030080CD63 /* HTTPClient.swift */; };
+		54155D5B2B1EB1C60080CD63 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D5A2B1EB1C60080CD63 /* Endpoint.swift */; };
+		54155D5D2B1EB4630080CD63 /* ErroRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D5C2B1EB4630080CD63 /* ErroRequest.swift */; };
+		54155D602B1EBAD70080CD63 /* RickAndMortyEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D5F2B1EBAD70080CD63 /* RickAndMortyEndpoints.swift */; };
+		54155D622B1EC7560080CD63 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D612B1EC7560080CD63 /* Host.swift */; };
+		54155D662B1ECAE80080CD63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D652B1ECAE80080CD63 /* HomeViewController.swift */; };
+		54155D682B1ECB0C0080CD63 /* PersonagensModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D672B1ECB0C0080CD63 /* PersonagensModel.swift */; };
+		54155D6A2B1ECB1A0080CD63 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D692B1ECB1A0080CD63 /* HomeViewModel.swift */; };
+		54155D6C2B1ECC4F0080CD63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54155D6B2B1ECC4F0080CD63 /* HomeView.swift */; };
+		546716D62B225639004C0D6E /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546716D52B225639004C0D6E /* Mockable.swift */; };
+		547B4A3D2B2187FB00528A86 /* PersonagensCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B4A3C2B2187FB00528A86 /* PersonagensCardView.swift */; };
+		547B4A3F2B21880A00528A86 /* PersonagensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B4A3E2B21880A00528A86 /* PersonagensTableViewCell.swift */; };
+		547B4A422B21927000528A86 /* PersonagemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B4A412B21927000528A86 /* PersonagemCardView.swift */; };
+		547B4A442B21928300528A86 /* PersonagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B4A432B21928300528A86 /* PersonagemTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54155D3A2B1AC9A40080CD63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54155D1B2B1AC9A10080CD63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54155D222B1AC9A10080CD63;
+			remoteInfo = CamadaNetwork;
+		};
+		54155D442B1AC9A40080CD63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54155D1B2B1AC9A10080CD63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54155D222B1AC9A10080CD63;
+			remoteInfo = CamadaNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54155D232B1AC9A10080CD63 /* CamadaNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamadaNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54155D262B1AC9A10080CD63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54155D282B1AC9A10080CD63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		54155D2A2B1AC9A10080CD63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54155D2D2B1AC9A10080CD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54155D2F2B1AC9A40080CD63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54155D322B1AC9A40080CD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54155D342B1AC9A40080CD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54155D392B1AC9A40080CD63 /* CamadaNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamadaNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54155D3D2B1AC9A40080CD63 /* CamadaNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamadaNetworkTests.swift; sourceTree = "<group>"; };
+		54155D432B1AC9A40080CD63 /* CamadaNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamadaNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54155D472B1AC9A40080CD63 /* CamadaNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamadaNetworkUITests.swift; sourceTree = "<group>"; };
+		54155D492B1AC9A40080CD63 /* CamadaNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamadaNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54155D572B1ACA030080CD63 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		54155D5A2B1EB1C60080CD63 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		54155D5C2B1EB4630080CD63 /* ErroRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroRequest.swift; sourceTree = "<group>"; };
+		54155D5F2B1EBAD70080CD63 /* RickAndMortyEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyEndpoints.swift; sourceTree = "<group>"; };
+		54155D612B1EC7560080CD63 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		54155D652B1ECAE80080CD63 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		54155D672B1ECB0C0080CD63 /* PersonagensModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagensModel.swift; sourceTree = "<group>"; };
+		54155D692B1ECB1A0080CD63 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		54155D6B2B1ECC4F0080CD63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		546716D52B225639004C0D6E /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		546716D72B22571C004C0D6E /* MockPersonagem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockPersonagem.json; sourceTree = "<group>"; };
+		547B4A3C2B2187FB00528A86 /* PersonagensCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagensCardView.swift; sourceTree = "<group>"; };
+		547B4A3E2B21880A00528A86 /* PersonagensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagensTableViewCell.swift; sourceTree = "<group>"; };
+		547B4A412B21927000528A86 /* PersonagemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemCardView.swift; sourceTree = "<group>"; };
+		547B4A432B21928300528A86 /* PersonagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54155D202B1AC9A10080CD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54155D362B1AC9A40080CD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54155D402B1AC9A40080CD63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54155D1A2B1AC9A10080CD63 = {
+			isa = PBXGroup;
+			children = (
+				54155D252B1AC9A10080CD63 /* CamadaNetwork */,
+				54155D3C2B1AC9A40080CD63 /* CamadaNetworkTests */,
+				54155D462B1AC9A40080CD63 /* CamadaNetworkUITests */,
+				54155D242B1AC9A10080CD63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54155D242B1AC9A10080CD63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54155D232B1AC9A10080CD63 /* CamadaNetwork.app */,
+				54155D392B1AC9A40080CD63 /* CamadaNetworkTests.xctest */,
+				54155D432B1AC9A40080CD63 /* CamadaNetworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54155D252B1AC9A10080CD63 /* CamadaNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				54155D562B1AC9F50080CD63 /* Network */,
+				54155D632B1EC96D0080CD63 /* Features */,
+				546716D32B2255D2004C0D6E /* RequestAppTest */,
+				546716D42B225602004C0D6E /* SupportingFiles */,
+				54155D2A2B1AC9A10080CD63 /* ViewController.swift */,
+				54155D2C2B1AC9A10080CD63 /* Main.storyboard */,
+				54155D312B1AC9A40080CD63 /* LaunchScreen.storyboard */,
+				54155D342B1AC9A40080CD63 /* Info.plist */,
+			);
+			path = CamadaNetwork;
+			sourceTree = "<group>";
+		};
+		54155D3C2B1AC9A40080CD63 /* CamadaNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				54155D3D2B1AC9A40080CD63 /* CamadaNetworkTests.swift */,
+			);
+			path = CamadaNetworkTests;
+			sourceTree = "<group>";
+		};
+		54155D462B1AC9A40080CD63 /* CamadaNetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54155D472B1AC9A40080CD63 /* CamadaNetworkUITests.swift */,
+				54155D492B1AC9A40080CD63 /* CamadaNetworkUITestsLaunchTests.swift */,
+			);
+			path = CamadaNetworkUITests;
+			sourceTree = "<group>";
+		};
+		54155D562B1AC9F50080CD63 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				54155D592B1EB1B70080CD63 /* Base */,
+				54155D5E2B1EBA920080CD63 /* Endpoints */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		54155D592B1EB1B70080CD63 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				54155D5A2B1EB1C60080CD63 /* Endpoint.swift */,
+				54155D5C2B1EB4630080CD63 /* ErroRequest.swift */,
+				54155D612B1EC7560080CD63 /* Host.swift */,
+				54155D572B1ACA030080CD63 /* HTTPClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		54155D5E2B1EBA920080CD63 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				54155D5F2B1EBAD70080CD63 /* RickAndMortyEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		54155D632B1EC96D0080CD63 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				54155D642B1ECACC0080CD63 /* Personagens */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		54155D642B1ECACC0080CD63 /* Personagens */ = {
+			isa = PBXGroup;
+			children = (
+				546716D12B2255AA004C0D6E /* JsonMock */,
+				546716D02B22430E004C0D6E /* ViewModel */,
+				546716CD2B224295004C0D6E /* View */,
+				54155D672B1ECB0C0080CD63 /* PersonagensModel.swift */,
+			);
+			path = Personagens;
+			sourceTree = "<group>";
+		};
+		546716CD2B224295004C0D6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				546716CE2B2242A7004C0D6E /* ViewController */,
+				547B4A3A2B2187D900528A86 /* Cards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		546716CE2B2242A7004C0D6E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				546716CF2B2242B1004C0D6E /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		546716CF2B2242B1004C0D6E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				54155D652B1ECAE80080CD63 /* HomeViewController.swift */,
+				54155D6B2B1ECC4F0080CD63 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		546716D02B22430E004C0D6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54155D692B1ECB1A0080CD63 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		546716D12B2255AA004C0D6E /* JsonMock */ = {
+			isa = PBXGroup;
+			children = (
+				546716D72B22571C004C0D6E /* MockPersonagem.json */,
+			);
+			path = JsonMock;
+			sourceTree = "<group>";
+		};
+		546716D32B2255D2004C0D6E /* RequestAppTest */ = {
+			isa = PBXGroup;
+			children = (
+				546716D52B225639004C0D6E /* Mockable.swift */,
+			);
+			path = RequestAppTest;
+			sourceTree = "<group>";
+		};
+		546716D42B225602004C0D6E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				54155D262B1AC9A10080CD63 /* AppDelegate.swift */,
+				54155D282B1AC9A10080CD63 /* SceneDelegate.swift */,
+				54155D2F2B1AC9A40080CD63 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		547B4A3A2B2187D900528A86 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				547B4A3B2B2187E600528A86 /* Personagens */,
+				547B4A402B21925600528A86 /* Personangem */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		547B4A3B2B2187E600528A86 /* Personagens */ = {
+			isa = PBXGroup;
+			children = (
+				547B4A3E2B21880A00528A86 /* PersonagensTableViewCell.swift */,
+				547B4A3C2B2187FB00528A86 /* PersonagensCardView.swift */,
+			);
+			path = Personagens;
+			sourceTree = "<group>";
+		};
+		547B4A402B21925600528A86 /* Personangem */ = {
+			isa = PBXGroup;
+			children = (
+				547B4A432B21928300528A86 /* PersonagemTableViewCell.swift */,
+				547B4A412B21927000528A86 /* PersonagemCardView.swift */,
+			);
+			path = Personangem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54155D222B1AC9A10080CD63 /* CamadaNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54155D4D2B1AC9A40080CD63 /* Build configuration list for PBXNativeTarget "CamadaNetwork" */;
+			buildPhases = (
+				54155D1F2B1AC9A10080CD63 /* Sources */,
+				54155D202B1AC9A10080CD63 /* Frameworks */,
+				54155D212B1AC9A10080CD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamadaNetwork;
+			productName = CamadaNetwork;
+			productReference = 54155D232B1AC9A10080CD63 /* CamadaNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54155D382B1AC9A40080CD63 /* CamadaNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54155D502B1AC9A40080CD63 /* Build configuration list for PBXNativeTarget "CamadaNetworkTests" */;
+			buildPhases = (
+				54155D352B1AC9A40080CD63 /* Sources */,
+				54155D362B1AC9A40080CD63 /* Frameworks */,
+				54155D372B1AC9A40080CD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54155D3B2B1AC9A40080CD63 /* PBXTargetDependency */,
+			);
+			name = CamadaNetworkTests;
+			productName = CamadaNetworkTests;
+			productReference = 54155D392B1AC9A40080CD63 /* CamadaNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54155D422B1AC9A40080CD63 /* CamadaNetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54155D532B1AC9A40080CD63 /* Build configuration list for PBXNativeTarget "CamadaNetworkUITests" */;
+			buildPhases = (
+				54155D3F2B1AC9A40080CD63 /* Sources */,
+				54155D402B1AC9A40080CD63 /* Frameworks */,
+				54155D412B1AC9A40080CD63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54155D452B1AC9A40080CD63 /* PBXTargetDependency */,
+			);
+			name = CamadaNetworkUITests;
+			productName = CamadaNetworkUITests;
+			productReference = 54155D432B1AC9A40080CD63 /* CamadaNetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54155D1B2B1AC9A10080CD63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					54155D222B1AC9A10080CD63 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					54155D382B1AC9A40080CD63 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 54155D222B1AC9A10080CD63;
+					};
+					54155D422B1AC9A40080CD63 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 54155D222B1AC9A10080CD63;
+					};
+				};
+			};
+			buildConfigurationList = 54155D1E2B1AC9A10080CD63 /* Build configuration list for PBXProject "CamadaNetwork" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54155D1A2B1AC9A10080CD63;
+			productRefGroup = 54155D242B1AC9A10080CD63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54155D222B1AC9A10080CD63 /* CamadaNetwork */,
+				54155D382B1AC9A40080CD63 /* CamadaNetworkTests */,
+				54155D422B1AC9A40080CD63 /* CamadaNetworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54155D212B1AC9A10080CD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54155D332B1AC9A40080CD63 /* LaunchScreen.storyboard in Resources */,
+				54155D302B1AC9A40080CD63 /* Assets.xcassets in Resources */,
+				54155D2E2B1AC9A10080CD63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54155D372B1AC9A40080CD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54155D412B1AC9A40080CD63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54155D1F2B1AC9A10080CD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54155D2B2B1AC9A10080CD63 /* ViewController.swift in Sources */,
+				54155D602B1EBAD70080CD63 /* RickAndMortyEndpoints.swift in Sources */,
+				54155D272B1AC9A10080CD63 /* AppDelegate.swift in Sources */,
+				54155D622B1EC7560080CD63 /* Host.swift in Sources */,
+				54155D662B1ECAE80080CD63 /* HomeViewController.swift in Sources */,
+				547B4A3D2B2187FB00528A86 /* PersonagensCardView.swift in Sources */,
+				54155D582B1ACA030080CD63 /* HTTPClient.swift in Sources */,
+				54155D292B1AC9A10080CD63 /* SceneDelegate.swift in Sources */,
+				546716D62B225639004C0D6E /* Mockable.swift in Sources */,
+				54155D682B1ECB0C0080CD63 /* PersonagensModel.swift in Sources */,
+				54155D6C2B1ECC4F0080CD63 /* HomeView.swift in Sources */,
+				547B4A422B21927000528A86 /* PersonagemCardView.swift in Sources */,
+				54155D5B2B1EB1C60080CD63 /* Endpoint.swift in Sources */,
+				54155D6A2B1ECB1A0080CD63 /* HomeViewModel.swift in Sources */,
+				54155D5D2B1EB4630080CD63 /* ErroRequest.swift in Sources */,
+				547B4A442B21928300528A86 /* PersonagemTableViewCell.swift in Sources */,
+				547B4A3F2B21880A00528A86 /* PersonagensTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54155D352B1AC9A40080CD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54155D3E2B1AC9A40080CD63 /* CamadaNetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54155D3F2B1AC9A40080CD63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54155D4A2B1AC9A40080CD63 /* CamadaNetworkUITestsLaunchTests.swift in Sources */,
+				54155D482B1AC9A40080CD63 /* CamadaNetworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54155D3B2B1AC9A40080CD63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54155D222B1AC9A10080CD63 /* CamadaNetwork */;
+			targetProxy = 54155D3A2B1AC9A40080CD63 /* PBXContainerItemProxy */;
+		};
+		54155D452B1AC9A40080CD63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54155D222B1AC9A10080CD63 /* CamadaNetwork */;
+			targetProxy = 54155D442B1AC9A40080CD63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54155D2C2B1AC9A10080CD63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54155D2D2B1AC9A10080CD63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54155D312B1AC9A40080CD63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54155D322B1AC9A40080CD63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54155D4B2B1AC9A40080CD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54155D4C2B1AC9A40080CD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54155D4E2B1AC9A40080CD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22U723CBKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CamadaNetwork/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makoto.CamadaNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54155D4F2B1AC9A40080CD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22U723CBKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CamadaNetwork/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makoto.CamadaNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54155D512B1AC9A40080CD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22U723CBKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makoto.CamadaNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamadaNetwork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CamadaNetwork";
+			};
+			name = Debug;
+		};
+		54155D522B1AC9A40080CD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22U723CBKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makoto.CamadaNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamadaNetwork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CamadaNetwork";
+			};
+			name = Release;
+		};
+		54155D542B1AC9A40080CD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22U723CBKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makoto.CamadaNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CamadaNetwork;
+			};
+			name = Debug;
+		};
+		54155D552B1AC9A40080CD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22U723CBKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makoto.CamadaNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CamadaNetwork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54155D1E2B1AC9A10080CD63 /* Build configuration list for PBXProject "CamadaNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54155D4B2B1AC9A40080CD63 /* Debug */,
+				54155D4C2B1AC9A40080CD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54155D4D2B1AC9A40080CD63 /* Build configuration list for PBXNativeTarget "CamadaNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54155D4E2B1AC9A40080CD63 /* Debug */,
+				54155D4F2B1AC9A40080CD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54155D502B1AC9A40080CD63 /* Build configuration list for PBXNativeTarget "CamadaNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54155D512B1AC9A40080CD63 /* Debug */,
+				54155D522B1AC9A40080CD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54155D532B1AC9A40080CD63 /* Build configuration list for PBXNativeTarget "CamadaNetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54155D542B1AC9A40080CD63 /* Debug */,
+				54155D552B1AC9A40080CD63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54155D1B2B1AC9A10080CD63 /* Project object */;
+}
